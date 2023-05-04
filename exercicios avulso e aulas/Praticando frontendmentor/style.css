@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: outfit;
+    src: url(Outfit/Outfit-VariableFont_wght.ttf);
+    
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: Outfit, sans-serif;
+    
+}
+main {
+    background-color: hsl(215, 32%, 27%);
+    border-radius: 10px;
+    border: 60px;
+    width: 250px;
+    padding: 15px 20px 200px 20px;
+    margin: 150px 480px; 
+}
+
+h1{
+    color: white;
+    text-align: center;
+    text-align: justify;
+}
+
+.descricao{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+.numeros{
+    color: hsl(178, 100%, 50%);
+    font-size: 0.8em;
+}
+
+.prazo{
+    color: hsl(215, 51%, 70%);
+    font-size: 0.8em;
+}
+
+.formatacao{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+    
+}
+
+.boxnumeros{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    height: 40px;
+}
+
+.boxprazo{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    height: 40px;
+    
+}
+
+.icon{
+    height: 50%;
+    width: 20%;
+}
