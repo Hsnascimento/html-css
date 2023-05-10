@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de imagem</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            background-size: cover;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /*Shorthand - background segue essa ordem 
+            color > image > position > repeat> {size} > attachment*/
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,6 +38,18 @@
         <h1>
             Teste de imagem de fundo
         </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod esse temporibus suscipit, ab eum, error accusamus est doloribus, quasi eos totam voluptates dolorem corporis quidem sequi maxime nihil saepe.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fuga quod expedita sunt minima esse, exercitationem omnis! Dolor dicta aperiam provident officia quisquam autem voluptas praesentium consequatur eligendi? Iure, sed?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod esse temporibus suscipit, ab eum, error accusamus est doloribus, quasi eos totam voluptates dolorem corporis quidem sequi maxime nihil saepe.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fuga quod expedita sunt minima esse, exercitationem omnis! Dolor dicta aperiam provident officia quisquam autem voluptas praesentium consequatur eligendi? Iure, sed?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod esse temporibus suscipit, ab eum, error accusamus est doloribus, quasi eos totam voluptates dolorem corporis quidem sequi maxime nihil saepe.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fuga quod expedita sunt minima esse, exercitationem omnis! Dolor dicta aperiam provident officia quisquam autem voluptas praesentium consequatur eligendi? Iure, sed?
+        </p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quod esse temporibus suscipit, ab eum, error accusamus est doloribus, quasi eos totam voluptates dolorem corporis quidem sequi maxime nihil saepe.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fuga quod expedita sunt minima esse, exercitationem omnis! Dolor dicta aperiam provident officia quisquam autem voluptas praesentium consequatur eligendi? Iure, sed?
