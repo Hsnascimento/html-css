@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Segunda tabela</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -13,56 +13,49 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            border: 5px solid red;
             text-align: center;
-            
         }
 
         tr.linha{
-            background-color: gray;
+            background-color: blueviolet;
         }
 
         td{
             border: 1px solid black;
             padding: 8px;
         }
-
-        td.dado{
-            background-color: yellow;
-        }
-
-        td.pink{
-            background-color: pink;
-        }
-
+        
         td.blue{
-            background-color: blue;
+            background-color: aqua;
+        }
+
+        td.yellow{
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
-    <h1>
-        Minha primeira tabela
-    </h1>
+    <h1>Brincando com tabela</h1>
     <table>
-        <tr class="linha"> <!-- Primeira Linha-->
+        <tr class="linha">
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr> <!--Segunda Linha-->
-            <td>A2</td>
-            <td class="dado">B2</td>
-            <td>C2</td>
+        <tr>
+            <td class="blue">A2</td>
+            <td>B2</td>
+            <td class="yellow">C2</td>
         </tr>
-        <tr> <!--Terceira Linha-->
-            <td class="pink">A3</td>
+        <tr>
+            <td>A3</td>
             <td>B3</td>
-            <td class="blue">C3</td>
+            <td>C3</td>
         </tr>
         <tr>
             <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
+
         </tr>
     </table>
 </body>
