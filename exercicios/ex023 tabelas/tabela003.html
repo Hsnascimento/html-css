@@ -15,6 +15,7 @@
             width: 500px;
             height: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
@@ -34,6 +35,12 @@
         th{
             border: 1px solid black;
             padding: 5px;
+        }
+
+        thead > tr > th{
+            position:sticky;
+            top: -1px;
+            background-color:rgba(127, 255, 212, 0.993) ;
         }
 
         tbody > tr:nth-child(odd){
@@ -200,6 +207,5 @@
             
         </tfoot>
     </table>
-    
 </body>
 </html>
