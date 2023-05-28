@@ -17,6 +17,16 @@
             border-collapse: collapse;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: darkgrey;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 5px;
+
+        }
+
         thead, tfoot{
             background-color: rgba(127, 255, 212, 0.473);
         }
@@ -24,6 +34,10 @@
         th{
             border: 1px solid black;
             padding: 5px;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: antiquewhite;
         }
 
         td{
@@ -49,12 +63,15 @@
         Uso de tabelas grandes
     </h1>
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>Cidade</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Cidade</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
