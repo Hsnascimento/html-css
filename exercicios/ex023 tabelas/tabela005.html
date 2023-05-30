@@ -14,14 +14,23 @@
         }
 
         caption{
+            background-color: #1f4744d0;
+            color: white;
             font-size: 1.3em;
             font-weight: bold;
             padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        #cabecalho{
+            background-color: #90E2DB;
         }
 
         td, th{
             border: 1px solid black;
             padding: 10px;
+            text-align: center;
             
         }
     </style>
@@ -32,12 +41,12 @@
             Lista de Filmes Favoritos
         </caption>
         <tr>
-            <th>Grupo</th>
-            <th>Nomes</th>
-            <th colspan="3">Filmes</th>
+            <th id="cabecalho" scope="col">Grupo</th>
+            <th id="cabecalho" scope="col">Nomes</th>
+            <th id="cabecalho" scope="colgroup" colspan="3">Filmes</th>
         </tr>
         <tr>
-            <th rowspan="3">Mulheres</th>
+            <th scope="rowgroup" rowspan="3">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td>Allen</td>
             <td>Rambo</td>
@@ -56,7 +65,7 @@
             </tr>
         </tr>
         <tr>
-            <th rowspan="3">Homens</th>
+            <th scope="rowgroup" rowspan="3">Homens</th>
             <td>Bruno Mendonça</td>
             <td>Amnesia</td>
             <td>Gladiador</td>
@@ -74,7 +83,12 @@
                 <td>Nemo</td>
             </tr>
         </tr>
-        
+        <footer>
+            <th colspan="4">
+                Total de Filmes
+            </th>
+            <td>XX</td>
+        </footer>   
     </table>
     
 </body>
