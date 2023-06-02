@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando colunas</title>
+    <style>
+        caption{
+            padding: 8px;
+        }
+        table{
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        col.sexo{
+            background-color: aquamarine;
+        }
+
+        col.idade{
+            background-color: burlywood;
+        }
+
+        col.cgrupo{
+            background-color: red;
+        }
+
+        col.amarelo{
+            background-color: yellow;
+        }
+
+        col.verde{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <colgroup>
+                <col class="cnome">
+                <col class="sexo">
+                <col class="idade">
+                <col class="profissao">
+            </colgroup>
+            <caption>Destacando colunas</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Henrique</td>
+                    <td>M</td>
+                    <td>24</td>
+                    <td>Aux. Administrativo</td>
+                </tr>
+                <tr>
+                    <td>Eduardo</td>
+                    <td>M</td>
+                    <td>16</td>
+                    <td>Estudante</td>
+                </tr>
+                <tr>
+                    <td>Natalia</td>
+                    <td>F</td>
+                    <td>19</td>
+                    <td>Estudante</td>
+                </tr>
+            </tbody>
+    </table>
+    <table>
+        <thead>
+            <colgroup>
+                <col class="cnome">
+                <col class="cgrupo" span="2">
+                <col class="profissao">
+            </colgroup>
+            <caption>Outra maneira de destacar duas colunas com uma config (span)</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Henrique</td>
+                    <td>M</td>
+                    <td>24</td>
+                    <td>Aux. Administrativo</td>
+                </tr>
+                <tr>
+                    <td>Eduardo</td>
+                    <td>M</td>
+                    <td>16</td>
+                    <td>Estudante</td>
+                </tr>
+                <tr>
+                    <td>Natalia</td>
+                    <td>F</td>
+                    <td>19</td>
+                    <td>Estudante</td>
+                </tr>
+            </tbody>
+    </table>
+    <table>
+        <thead>
+            <colgroup>
+                <col class="amarelo">
+                <col class="verde">
+                <col class="amarelo">
+                <col class="verde">
+            </colgroup>
+            <caption>Destacando de outra maneira</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Henrique</td>
+                    <td>M</td>
+                    <td>24</td>
+                    <td>Aux. Administrativo</td>
+                </tr>
+                <tr>
+                    <td>Eduardo</td>
+                    <td>M</td>
+                    <td>16</td>
+                    <td>Estudante</td>
+                </tr>
+                <tr>
+                    <td>Natalia</td>
+                    <td>F</td>
+                    <td>19</td>
+                    <td>Estudante</td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>
