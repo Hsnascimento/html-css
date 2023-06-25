@@ -32,8 +32,8 @@
 }
 
 body{
-  background-color: black;
-  color: white;
+  background-color: #121215;
+  color: #eaeaea;
   font-family: 'Roboto', sans-serif;
   display: grid;
   grid-template-areas: "profile timeline";
@@ -45,7 +45,7 @@ nav{
   padding: 64px;
   grid-area: timeline;
   overflow-y: scroll;
-  animation: entering 2.5s ease-in-out;
+  animation: entering 0.7s ease-in-out;
 }
 
 .memory{
@@ -104,11 +104,11 @@ aside{
   background-image: url(assets/background.svg);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: auto 100; 
+  background-size: auto 100%; 
 }
 
 aside *{
-  animation: entering 2.5s ease-in-out;
+  animation: entering 0.7s ease-in-out;
 }
 
 aside img:nth-child(2){
@@ -131,7 +131,7 @@ aside span{
 
 @media (max-width: 768px){
   :root{
-    font-size: 12x;
+    font-size: 14px;
   }
   body {
     grid-template-columns: 1fr;
@@ -140,14 +140,14 @@ aside span{
     "profile"
     "timeline";
   }
+  aside{
+    border-right: none;
+    padding: 32px 12px;
+  }
+  
+  nav{
+    overflow-y:visible;
+    padding: 22px;
+  }
 }
 
-aside{
-  border-right: none;
-  padding: 32px 12px;
-}
-
-nav{
-  overflow-y:visible;
-  padding: 22px;
-}
